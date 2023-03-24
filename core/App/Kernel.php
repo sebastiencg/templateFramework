@@ -17,6 +17,10 @@ class Kernel
 
         if(!empty($_GET['type'])){ $type = $_GET['type']; };
         if(!empty($_GET['action'])){ $action = $_GET['action']; };
+        if(empty($_GET['type'])&&!empty($_GET['action'])){
+            $type = "page";
+        };
+
 
         $type = ucfirst($type);
         $controllerName = "\Controllers\\".$type."Controller";
