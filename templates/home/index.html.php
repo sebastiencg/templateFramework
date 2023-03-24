@@ -117,14 +117,3 @@
     </h4>
     <img src="image/templates.png" alt="illustration">
 </div>
-<p>
-
-
-
-    notre url a besoin d’un “type” et d’une  “action”
-
-    exemple:image
-
-    le type va nous permettre de notre le controller et l’action lui de connaître la méthode à utiliser
-
-</p>
