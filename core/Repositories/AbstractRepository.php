@@ -59,7 +59,7 @@ abstract class AbstractRepository
     public function findAll()
     {
 
-        $request = $this->pdo->query("SELECT * FROM $this->tableName");
+        $request = $this->pdo->query("SELECT * FROM $this->tableName ORDER BY id DESC");
 
         $items = $request->fetchAll(\PDO::FETCH_CLASS,get_class($this->targetEntity));
         return $items;

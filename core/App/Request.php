@@ -70,8 +70,8 @@ class Request
             {
                 if($typeDeDonnees == 'text'){
                     $resultats[$parametre] = htmlspecialchars($requestParams[$parametre]);
-                }else if($typeDeDonnees == 'number'){
-
+                }
+                else if($typeDeDonnees == 'number'){
                     if(ctype_digit($requestParams[$parametre])){
                         $monNombre = htmlspecialchars($requestParams[$parametre]);
                         $resultats[$parametre] = (int)$monNombre;

@@ -16,7 +16,7 @@ abstract class Security implements UserInterface
 
     }
 
-    public function passwordMatches(string $clearPassword):bool
+    public function decryptage(string $clearPassword):bool
     {
 
        return password_verify($clearPassword, $this->password);

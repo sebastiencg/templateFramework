@@ -3,6 +3,7 @@
 namespace Controllers;
 
 
+use App\Security;
 use Attributes\DefaultEntity;
 use Attributes\TargetEntity;
 use Attributes\TargetRepository;
